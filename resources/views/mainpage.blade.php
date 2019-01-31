@@ -22,9 +22,9 @@
                 </div>
                 <div class="table-content">
                     <div class="table-row" >
-                        <div class="table-data" id = "busstops">Tom</div>
-                        <div class="table-data"  id = "schools">2</div>
-                        <div class="table-data" id = "addresses">0</div>
+                        <div class="table-data" id = "busstops"></div>
+                        <div class="table-data"  id = "schools"></div>
+                        <div class="table-data" id = "addresses"></div>
                     </div>
                 </div>
             </div>
