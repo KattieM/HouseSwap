@@ -13,3 +13,6 @@
 
 Route::get('/','PostCodeController@returnPostCodes');
 Route::get('/menu', 'PostCodeController@returnAllPostCodes');
+Route::get('/data', 'PostCodeController@returnDataForTable');
+
+//Route::get('/getCsv', 'PostCodeController@export')->name('export');

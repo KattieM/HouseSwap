@@ -27,4 +27,16 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public static function getDataExport()
+    {
+        $users = User::all()->take(100);
+        foreach($users as $user){
+            $user->house = House::where('user_id', '=', $user->id)->get();
+    }
+        return $users;
+    }
+
+
+
 }

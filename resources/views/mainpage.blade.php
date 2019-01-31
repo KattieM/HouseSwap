@@ -21,23 +21,15 @@
                     <div class="header__item"><a id="draws" class="filter__link filter__link--number" href="#">Addresses</a></div>
                 </div>
                 <div class="table-content">
-                    <div class="table-row">
-                        <div class="table-data">Tom</div>
-                        <div class="table-data">2</div>
-                        <div class="table-data">0</div>
-                    </div>
-                    <div class="table-row">
-                        <div class="table-data">Dick</div>
-                        <div class="table-data">1</div>
-                        <div class="table-data">1</div>
-                    </div>
-                    <div class="table-row">
-                        <div class="table-data">Harry</div>
-                        <div class="table-data">0</div>
-                        <div class="table-data">2</div>
+                    <div class="table-row" >
+                        <div class="table-data" id = "busstops">Tom</div>
+                        <div class="table-data"  id = "schools">2</div>
+                        <div class="table-data" id = "addresses">0</div>
                     </div>
                 </div>
             </div>
         </div>
+        {{--<button href="{{ route('export') }}" type="button" class="btn btn-default">Left</button>--}}
+
     </div>
 @endsection
