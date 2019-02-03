@@ -24,7 +24,7 @@
 ### SQL dump
 [houseswap.sql](houseswap.sql)
 
-###Additional packages
+### Additional packages
 * [barryvdh/laravel-debugbar](https://github.com/barryvdh/laravel-debugbar)
 * [maatwebsite/excel](https://laravel-excel.maatwebsite.nl/)
  
