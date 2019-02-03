@@ -29,6 +29,6 @@
                 </div>
             </div>
         </div>
-        <a href="{{ route('export') }}" type="button" class="btn btn-default btn-cstm">Download CSV</a>
+        <a href="{{ route('export')}}" type="button" class="btn btn-default btn-cstm">Download CSV</a>
     </div>
 @endsection
