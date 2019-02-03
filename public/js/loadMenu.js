@@ -14,7 +14,7 @@ $(document).ready(function(){
                 var el=document.createElement('div');
                 el.setAttribute('id', "dropdown_"+parent);
                 data.forEach(function(item, index, array){
-                    el.innerHTML+=`<a class="link" id=${item.id}>${item.postcode}</a>`;
+                    el.innerHTML+=`<a class="link" id=${item.id} data-long=${item.longitude} data-lat=${item.latitude}>${item.postcode}</a>`;
                 });
                 $(parentEl).empty();
                 $(parentEl).append($(el));
@@ -29,11 +29,13 @@ $(document).ready(function(){
     $('.dropdown-container').off('click').on('click', '.link', function (e) {
         e.stopImmediatePropagation();
         var parent = $(this).attr('id');
+        var long = $(this).attr('data-long');
+        var lat = $(this).attr('data-lat')
         console.log(parent);
         $.ajax({
             type: 'GET',
             url: '/data',
-            data: {postcode_id: parent},
+            data: {postcode_id: parent, longitude:long, latitude:lat},
             success: function (data) {
                console.log(data);
                 var el=document.createElement('div');
